@@ -1,6 +1,6 @@
 require "digest/md5"
 require "hmac-sha2"
-require "ruby-debug"
+# require "ruby-debug"
 module Facebooker2
   module Rails
     module Controller
@@ -13,6 +13,7 @@ module Facebooker2
       end
       
       def current_facebook_user
+        # debugger
         fetch_client_and_user
         @_current_facebook_user
       end
